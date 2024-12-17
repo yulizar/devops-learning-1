@@ -14,8 +14,10 @@ cpu_top_process=$(ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | head -n 6)
 mem_top_process=$(ps -eo pid,ppid,cmd,%mem --sort=-%mem | head -n 6)
 
 echo "CPU Usage: $cpu_usage%"
-echo "Total Memory Usage: Free: $mem_free, Percentage : $free_percent% | Used: $mem_used, Percentage: $used_percent%"
-echo "Total Disk Usage: Free: $disk_free | Usage: $disk_used"
+echo "Total Memory Usage: "
+echo "Free: $mem_free, Percentage : $free_percent% | Used: $mem_used, Percentage: $used_percent%"
+echo "Total Disk Usage: "
+echo "Free: $disk_free | Usage: $disk_used"
 echo "Top 5 CPU Process:"
 echo "$cpu_top_process"
 echo "Top 5 Memory Process:"
